@@ -1,0 +1,630 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"J",
+				"JarraLlenoException"
+			],
+			[
+				"thro",
+				"throw"
+			],
+			[
+				"Jar",
+				"JarraVacioException"
+			],
+			[
+				"jar",
+				"jarra3L"
+			],
+			[
+				"ja",
+				"jarra3L"
+			],
+			[
+				"jarra",
+				"jarra4L"
+			],
+			[
+				"clone",
+				"clon_destino"
+			],
+			[
+				"clon",
+				"clon_origen"
+			],
+			[
+				"j",
+				"jarra3L"
+			],
+			[
+				"tra",
+				"traslado"
+			],
+			[
+				"jarr",
+				"jarra4L"
+			],
+			[
+				"vac",
+				"isVacio"
+			],
+			[
+				"Ja",
+				"JarsH20"
+			],
+			[
+				"cile",
+				"clienteId"
+			],
+			[
+				"border-botto",
+				"border-bottom-left-radius"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"backg",
+				"background"
+			],
+			[
+				"pol",
+				"polls_id"
+			],
+			[
+				"op",
+				"optionID"
+			],
+			[
+				"P",
+				"Polls"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"Po",
+				"PollController"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"fo",
+				"footer	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/david/Sync/IA/Practicas/Practica1/BucketsNode.java",
+			"settings":
+			{
+				"buffer_size": 4487,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "build.xml",
+			"settings":
+			{
+				"buffer_size": 1270,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/fiusac/ia1/Main.java",
+			"settings":
+			{
+				"buffer_size": 168,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/fiusac/ia1/jarras/Jarra.java",
+			"settings":
+			{
+				"buffer_size": 3039,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/fiusac/ia1/search/Nodo.java",
+			"settings":
+			{
+				"buffer_size": 1746,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/david/Sync/IA/Practicas/Practica1/practica1.txt",
+			"settings":
+			{
+				"buffer_size": 1004,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"print('hola')",
+			"echo hola"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/david/documents/GitHub/JarsH20/.gitignore",
+		"/home/david/Sync/IA/Practicas/Practica1/DepthFirstSearch.java",
+		"/home/david/Sync/IA/Practicas/Practica1/DepthLimitedSearch.java",
+		"/home/david/documents/GitHub/JarsH20/src/gt/fiusac/ia1/Main.java",
+		"/home/david/ecys/2012/2S12/00LAB/Proyectos/Proyecto 2/Endgame/src/fileops/FileRW.java",
+		"/home/david/documents/GitHub/JarsH20/src/gt/fiusac/ecys/ia1/Main.java",
+		"/home/david/documents/GitHub/JarsH20/build.xml",
+		"/home/david/documents/GitHub/JarsH20/src/gt/usac/fi/ia1/Main.java",
+		"/home/david/documents/GitHub/JarsH20/README.md",
+		"/home/david/workspace/ficha/app/config/services.php",
+		"/home/david/sandbox/web/btc-e/btc-e_php_public_api_example.php",
+		"/home/david/workspace/ficha/index.html",
+		"/home/david/workspace/ficha/deploy.sh",
+		"/home/david/workspace/ficha/app/controllers/IndexController.php",
+		"/home/david/workspace/ficha/app/views/index/guardar.volt",
+		"/home/david/workspace/ficha/app/config/config.php",
+		"/home/david/documents/GitHub/zgas/dbscripts/script.sql",
+		"/home/david/workspace/zgas/public/js/zgas.js",
+		"/home/david/workspace/zgas/README.md",
+		"/home/david/workspace/zgas/deploy.sh",
+		"/home/david/workspace/zgas/app/controllers/ClienteController.php",
+		"/home/david/workspace/zgas/app/views/index.volt",
+		"/home/david/workspace/zgas/app/views/index/index.volt",
+		"/home/david/workspace/zgas/app/controllers/IndexController.php",
+		"/home/david/workspace/zgas/app/views/cliente/index.volt",
+		"/home/david/workspace/zgas/app/views/cliente/register.volt",
+		"/home/david/workspace/zgas/app/views/cliente/show.volt",
+		"/home/david/workspace/zgas/.htaccess",
+		"/home/david/workspace/zgas/public/.htaccess",
+		"/home/david/workspace/zgas/app/config/config.php",
+		"/home/david/workspace/zgas/public/index.php",
+		"/home/david/workspace/zgas/app/config/services.php",
+		"/home/david/workspace/zgas/app/config/loader.php",
+		"/home/david/workspace/zgas/app/models/Cliente.php",
+		"/home/david/workspace/zgas/app/controllers/ClientesController.php",
+		"/home/david/workspace/zgas/app/views/clientes/index.volt",
+		"/home/david/sandbox/web/css3/paper/index.html",
+		"/home/david/sandbox/web/css3/paper/style.css",
+		"/home/david/sandbox/web/pragmatic/html5_content_editable/show.html",
+		"/home/david/sandbox/web/css3/fontface/index.html",
+		"/home/david/sandbox/web/css3/fontface/style.css",
+		"/home/david/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/david/sandbox/web/css3/columns/index.html",
+		"/home/david/sandbox/web/css3/columns/style.css",
+		"/home/david/sandbox/web/pragmatic/html5_new_tags/stylesheets/style.css",
+		"/home/david/sandbox/web/pragmatic/html5_new_tags/index.html",
+		"/srv/www/htdocs/blog/app/models/Polls.php",
+		"/srv/www/htdocs/blog/app/views/poll/show.volt",
+		"/srv/www/htdocs/blog/app/views/index.volt",
+		"/srv/www/htdocs/phalcon/blog/app/views/poll/add.volt",
+		"/srv/www/htdocs/phalcon/blog/app/views/poll/show.volt",
+		"/srv/www/htdocs/phalcon/blog/app/controllers/PollController.php",
+		"/srv/www/htdocs/phalcon/blog/app/views/poll/index.volt",
+		"/srv/www/htdocs/phalcon/blog/app/config/config.php",
+		"/srv/www/htdocs/phalcon/blog/app/models/PollOptions.php",
+		"/home/david/sandbox/web/phalcon/blog/app/models/PollOptions.php",
+		"/home/david/sandbox/web/phalcon/blog/app/views/poll/index.volt",
+		"/home/david/sandbox/web/phalcon/blog/app/controllers/PollController.php",
+		"/home/david/sandbox/web/phalcon/blog/app/models/Polls.php",
+		"/home/david/sandbox/web/phalcon/blog/app/views/poll/add.volt",
+		"/home/david/sandbox/web/phalcon/blog/app/views/poll/show.volt",
+		"/home/david/sandbox/web/phalcon/blog/.htaccess",
+		"/home/david/sandbox/web/phalcon/blog/app/config/config.php",
+		"/home/david/documents/reveal.js.tmp/template.html",
+		"/home/david/documents/reveal.js.tmp/index.html",
+		"/home/david/workspace/Academy/trunk/web/config.php",
+		"/home/david/workspace/Academy/trunk/src/Acme/DemoBundle/Resources/views/layout.html.twig",
+		"/home/david/workspace/Academy/trunk/src/Acme/DemoBundle/Resources/views/Secured/login.html.twig",
+		"/home/david/workspace/Academy/trunk/app/Resources/views/carousel.html.twig",
+		"/home/david/workspace/Academy/trunk/src/Acme/DemoBundle/Resources/config/routing.yml",
+		"/home/david/workspace/Academy/trunk/app/AppKernel.php",
+		"/home/david/workspace/Academy/trunk/app/config/routing_dev.yml",
+		"/home/david/workspace/Academy/trunk/composer.json",
+		"/home/david/workspace/Academy/trunk/src/Acme/DemoBundle/Resources/views/Demo/index.html.twig",
+		"/home/david/workspace/Academy/trunk/app/config/security.yml",
+		"/home/david/tmp/iraq-war-diary-redacted.mysql",
+		"/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/search.html.twig",
+		"/home/david/workspace/Academy/trunk/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/search.html.twig",
+		"/home/david/workspace/Academy/trunk/src/Academy/ProfileBundle/Resources/views/Security/dumpString.html.twig",
+		"/home/david/workspace/Academy/trunk/src/Academy/ProfileBundle/Entity/User.php",
+		"/home/david/workspace/Academy/trunk/src/Academy/ProfileBundle/Controller/SecurityController.php",
+		"/home/david/workspace/Academy/trunk/src/Academy/ProfileBundle/DataFixtures/ORM/LoadUserData.php",
+		"/home/david/workspace/Academy/trunk/src/Academy/ProfileBundle/Resources/views/Security/login.html.twig",
+		"/home/david/workspace/Academy/trunk/deploy-local-apache.sh",
+		"/home/david/workspace/Academy/trunk/app/config/parameters.yml",
+		"/home/david/workspace/Academy/trunk/src/Simple/ProfileBundle/Entity/User.php",
+		"/home/david/workspace/Academy/trunk/src/Acme/DemoBundle/Controller/DemoController.php",
+		"/home/david/workspace/Academy/trunk/src/Acme/DemoBundle/Resources/views/Welcome/index.html.twig",
+		"/home/david/workspace/Academy/trunk/web/app_dev.php",
+		"/home/david/workspace/Academy/trunk/app/config/routing.yml",
+		"/home/david/workspace/Academy/trunk/iniciar_entorno.sh",
+		"/home/david/workspace/Academy/trunk/deploy-to-vm.sh",
+		"/home/david/workspace/Academy/trunk/src/Simple/ProfileBundle/Controller/SecurityController.php",
+		"/home/david/workspace/Academy/trunk/src/Simple/ProfileBundle/Resources/views/Security/login.html.twig",
+		"/home/david/workspace/Academy/trunk/src/Simple/ProfileBundle/Resources/views/Security/dumpString.html.twig",
+		"/home/david/workspace/Academy/trunk/src/Simple/ProfileBundle/DataFixtures/ORM/LoadUserData.php",
+		"/home/david/workspace/Academy/trunk/src/Simple/ProfileBundle/Resources/views/Security/dumpString.twig.html",
+		"/home/david/workspace/Academy/trunk/composer.lock",
+		"/home/david/workspace/Academy/trunk/deploy-user-apache.sh",
+		"/home/david/workspace/Academy/trunk/app/config/config.yml",
+		"/home/david/sandbox/web/ruby/hello01/app/views/examples/form.html.erb",
+		"/home/david/sandbox/web/ruby/hello01/app/controllers/examples_controller.rb",
+		"/home/david/sandbox/web/ruby/hello01/app/controllers/application_controller.rb",
+		"/home/david/sandbox/web/ruby/hello01/app/controllers/hello_controller.rb",
+		"/home/david/sandbox/web/ruby/hello01/app/assets/stylesheets/hello.css.scss",
+		"/home/david/sandbox/web/ruby/hello01/app/views/hello/index.html.erb",
+		"/home/david/sandbox/web/ruby/hello01/app/views/layouts/application.html.erb",
+		"/home/david/sandbox/web/ruby/hello01/app/views/layouts/hello.html.erb",
+		"/home/david/sandbox/web/ruby/hello01/app/views/layouts/ejemplo.html.erb",
+		"/home/david/sandbox/web/ruby/hello01/config/routes.rb",
+		"/home/david/sandbox/web/ruby/hello01/Gemfile",
+		"/home/david/sandbox/web/ruby/hello01/app/views/layouts/welcome.html.erb",
+		"/home/david/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/david/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/david/.config/sublime-text-3/Packages/User/HTML (Rails).sublime-settings"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"clon_destino",
+			"clon_origen",
+			"static",
+			"main(",
+			"mkdir",
+			"zgas",
+			"apellido",
+			"d",
+			"clientes",
+			"size",
+			"gradient",
+			"views",
+			"Infraestructure",
+			"data:image/png;base64",
+			"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALYAAAA+CAMAAACxzRGDAAAAUVBMVEX////Ly8yko6WLioxkYmVXVVkwLjLl5eWxsLJKSEzy8vJxcHLY2Ni+vb89Oz9XVVh+fH+Yl5n///+xsbLY2Nlxb3KkpKWXlph+fX+LiYy+vr/IZP61AAAAAXRSTlMAQObYZgAABRBJREFUeNrVmtuWoyAQRS1FEEQSzQU7//+hYxUiXsKQZLJWM+chsUloN+WhCuguYoKyYqzmvGasKqH4HyRKxndipcgcumH8qViTM7TkUclcwaHmf5XM0eWq4km1KjdqXfMXJHVe1J3hL8lk5fCGv6wmT+o0d87U+XNrk0Y9nfv+7LM6ZJH5ZBL6LAbSxQ3Q5FDr22Skr8PQSy4n7isnsQxSX4r6pobhjCHHeDNOKrO3yGmCvZOjV9jmt8ulTdXFKdbKLNh+kOMvBzuVRa4Y7MUsdEUSWQe7xxCfZmcwjHU83LqzFvSbJQOXQvptbPnEFoyZtUUGwTeKuLuTHyT1kaP0P6cR01OKvv448gtl61dqZfmJezQmU/t+1R2fJLtBwXV6uWGwB9SZPrn0fKO2WAvQN1PUhHjTom3xgXYTkvlSKHs19OhslETq6X3HrXbjt8XbGj9b4Gi+lUAnL6XxQj8Pyk9N4Bt1xUrsLVN/3isYMug8rODMdbgOvoHs8uAb2fcANIAzkKCLYy+AXRpSU8sr1r4P67xhLgPp7vM32zlqt7Bhq2fI1Hwp+VgANxok59SsGV3oqdUL0YVDMRY7Yg8QLbVUU4NZNoOq5hJHuxEM28Sh/IyUZ8D3reR+yc58EGvOy2U0HQL6G9V+kWyEWHmzaMx6t4o9RhOm/riUiYrzqij4Ptqkn7AaCXqc+F47m04ahfde7YIz8RHEBN6BdVwdIGRVdNbKqYu1Hc0x0wBY4wqC8+XUgBGnj81SZsQB+0yAS1x/BlI/6ebHHk0lauQLuPDpu6EwAVJ7T0rl2uXa23jcqNyOZekhqYHRz3JOANrF4wCCmEs1f9D1lUe0n4NAATed80Y5e0Q7CO2TezM/BR6wKdgQzKbCF4uOQC3Bk0fKAzbFlyRWg3gksA/gmm7eOjrpaKX7fHlEW2xLbE6GZsPiCiShVzN7RG2xTz2G+OJtEqzdJ7APxy3MrSsV0VukXbKMp9lhs5BN6dr3CN+sySUaoxGwfRUM3I/gdPYONgVU+PLX4vUWm32AvUySarbONvcpV2RQEPKKjEBHFk01kQDGRblnn8ZuE9g+JUl8OWAPbkFK2K6JxhJVvF47FzYYnAN22ttwxKYCoH36rheEB7KG/HF/YUaa2G5JF+55tpyrl7B1WHM39HuP2N2EXPl1UBu8vbj4OjvD+NoTE4ssF+ScARgaJY1N7+u8bY/Y9BSM5PKwJbvMVab32YP5FB5TtcYVrGoASolVLTzI7kVsYVxRtAb5n2JXq1vCdtd47XtYItynrN0835PasLg0y13aOPbmPI+on2Lr9e5tjSHvgkAvclUjL3Fsdaw03IzgTR62yYClk7QMah4IQ0qSsoYYbOix6zJR1ZGDNMOY3Bb6W5S6jiyovep3t7bUPyoq7OkjYumrfESp8zSBc/OLosVf+nTnnKjsqR16++WDwpI8FxJWRFTlI6NKnqYJaL96TqjAbo9Toi5QiWBDcmfdFV+T8dkvFe5bItgstbM2X6QG2mVun+cazfRwOS0eiaeRRJKgLfc3BQAqfnhJyz8lfR6580SF/FXVu83Nz1xrrnFqqXL6Qxl47DNSm4RFflvN5sABDD8peouqLLKQXVdGbnqf+qIpOxON4ZyYdJEJ6sy4zS2c5eRPTT4Jyp46qDE5/ptAWqJOQ9e6yE82FXBbZCk1/tXVoshVoopE3CB0zmraI3nbqCJ/gW3ZMgtbC5nh/QHlOoOZBxQCRgAAAABJRU5ErkJggg==",
+			"search",
+			"serach",
+			"Search",
+			"{'",
+			"Simple",
+			"simple",
+			"/{",
+			"acme",
+			"require",
+			"#$",
+			"login_check",
+			"Academy",
+			"controll"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"destino",
+			"origen",
+			"ficha",
+			"Academy"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/david/Sync/IA/Practicas/Practica1/BucketsNode.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4487,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								625,
+								625
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 84.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "build.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62,
+								62
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/fiusac/ia1/Main.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 168,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								161,
+								161
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/fiusac/ia1/jarras/Jarra.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3039,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								166,
+								166
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 630.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/fiusac/ia1/search/Nodo.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1746,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1631,
+								1631
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 252.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/david/Sync/IA/Practicas/Practica1/practica1.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1004,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								840,
+								840
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "JarsH20.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"ta",
+				"~/Sync/IA_Lab/Tareas/tarea1/tarea1_ia1.txt"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Sync/IA_Lab/Tareas/tareas_ia1.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 195.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

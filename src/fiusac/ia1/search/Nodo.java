@@ -2,10 +2,6 @@ package fiusac.ia1.search;
 import java.util.*;
 public class Nodo{
 	private Jarra jarra4L, jarra3L;
-	public static final List<Integer> ordenReglas;
-	static {
-		 ordenReglas = new ArrayList<>(6);
-	}
 	/*
 	* Este Constructor es utilizado unica y exclusivamente para el nodo inicial
 	*/
@@ -18,7 +14,7 @@ public class Nodo{
 	* @param jarr4L Jarra de 4 Litros de capacidad
 	* @param jarr3L Jarra de 3 Litros de capacidad
 	*/
-	public Nodo(Jarra jarra4L, Jarra jarra3L){
+	private Nodo(Jarra jarra4L, Jarra jarra3L){
 		this.jarra4L = jarra4L;
 		this.jarra3L = jarra3L;
 	}
@@ -29,26 +25,26 @@ public class Nodo{
 	public List<Nodo> generarSucesores(){
 		List<Nodo> sucesores = new ArrayList<>(6);
 		Nodo n = null;
-		for (regla:ordenReglas){
+		for (Reglas regla:NoInformado.ordenReglas){
 			try{
 				switch(regla){
-					case 1:
+					case LLENAR4:
 						//llenar Jarra de 4L
 						n = new Nodo(jarra4L.llenar(), jarra3L);//(4L, 3L)
-					case 2:
+					case LLENAR3:
 						//llenar Jarra de 3L
 						n = new Nodo(jarra4L, jarra3L.llenar());//(4L, 3L)
-					case 3:
+					case VACIAR4:
 						//vaciar Jarra de 4L
 						n = new Nodo(jarra4L.vaciar(), jarra3L);//(4L, 3L)
-					case 4:
+					case VACIAR3:
 						//vacia Jarra de 3L
 						n = new Nodo(jarra4L, jarra3L.vaciar());//(4L, 3L)
-					case 5:
+					case TRASLADO43:
 						//traladar Jarra de 4L a Jarra de 3L
 						List<Jarra> retorno = jarra4L.traslado(jarra3L);
 						n = new Nodo(retorno.get(0), retorno.get(1));//(4L, 3L)
-					case 6:
+					case TRASLADO34:
 						//traladar Jarra de 3L a Jarra de 4L
 						retorno = jarra3L.traslado(jarra4L);
 						n = new Nodo(retorno.get(1), retorno.get(0)); //(4L, 3L)
@@ -60,5 +56,9 @@ public class Nodo{
 			
 		}
 		return sucesores;
+	}
+	@Override
+	public String toString(){
+		return String.format("Jarra 4L {%s} Jarra 3L {%s}", jarra4L, jarra3L);
 	}
 }

@@ -80,11 +80,11 @@ public class Jarra {
 			throw new JarraLlenoException(jdestino);
 		Jarra origen = clone(), destino = jdestino.clone();
 		int destino_libre = jdestino.getLibres();
-		if (destino_libre >= ocupacidad)// va caber en destino, todos los Litros lo que tengo ahorita
+		if (destino_libre >= ocupacidad){// va caber en destino, todos los Litros lo que tengo ahorita
 			//traslado = ocupacidad - destino_libre;
 			destino.ocupacidad += ocupacidad;
 			origen.ocupacidad = 0;
-		else {//if (destino_libre < ocupacidad)
+		} else {//if (destino_libre < ocupacidad)
 			int fraccion = ocupacidad - destino_libre;
 			origen.ocupacidad -= fraccion;
 			destino.ocupacidad += fraccion;

@@ -1,5 +1,8 @@
 package fiusac.ia1.search;
 import java.util.*;
+
+import fiusac.ia1.jarras.Jarra;
+import fiusac.ia1.jarras.JarraException;
 public class Nodo{
 	private Jarra jarra4L, jarra3L;
 	/*

@@ -1,14 +1,26 @@
 package fiusac.ia1.utilidades;
 import java.util.Properties;
 import java.io.*;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.*;
+
 import fiusac.ia1.search.*;
 public class FicheroOps{
-    public static String configName;
+	public static String user_dir;
+    private static Path configPath;
     static {
-        configName = "configuracion.conf";
+    	user_dir = System.getProperty("user.dir");
+    	configPath = Paths.get(user_dir, "c1.conf");
     }
+    public static void setConfigPath(String configFile){
+    	configPath = Paths.get(configFile);
+    }
+    /*
+     * 
+     */
 	public static void iniciar(){
-		File file = new File(configName);
+		File file = configPath.toFile();
 		try {
             if (!file.exists()) file.createNewFile();
         } catch (IOException e) {
@@ -16,9 +28,10 @@ public class FicheroOps{
         }
         Properties properties = new Properties();
         try {
-            properties.load(new FileInputStream("configuracion.conf"));
+            properties.load(new FileInputStream(file));
         } catch (IOException e) {
             e.printStackTrace();
+            System.out.println("Configuracion no encontrada");
         }
 
         String primero, segundo, tercero, cuarto, quinto, sexto;
@@ -48,7 +61,7 @@ public class FicheroOps{
         sordenReglas.add(cuarto);
         sordenReglas.add(quinto);
         sordenReglas.add(sexto);
-        List<Reglas> ordenReglas = new ArrayList<>(6);
+        List<Reglas> ordenReglas = NoInformado.ordenReglas;
         for (String regla: sordenReglas){
             switch (regla){
                 case "llenar4":
@@ -74,7 +87,7 @@ public class FicheroOps{
 
         String algoritmoProperty = properties.getProperty("algoritmo").trim().toLowerCase();
         Algoritmos algoritmo;
-        switch(algoritmo){
+        switch(algoritmoProperty){
             case "profundidad":
                 algoritmo = Algoritmos.PROFUNDIDAD;
                 break;
@@ -97,11 +110,11 @@ public class FicheroOps{
         int limite = 3;
         try {
             limite = Integer.parseInt(limiteProperty);
-        } catch(IOException e){
+        } catch(Exception e){
             System.out.println("Couldn't read limite, defaulting to "+limite);
         }
         NoInformado.algoritmo = algoritmo;
         NoInformado.limite = limite;
-        NoInformado.ordenReglas = ordenReglas;
+        //NoInformado.ordenReglas = ordenReglas;
 	}
 }

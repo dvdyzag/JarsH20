@@ -10,6 +10,9 @@ public class Jarra {
 	public Jarra (int capacidad){
 		this.capacidad = capacidad;
 	}
+	public int getOcupacidad(){
+		return ocupacidad;
+	}
 	/*
 	* Inicia la Jarra de capacidad y ocupacidad dada
 	* @param capacidad Capacidad de la Jarra mayor que 0
@@ -85,7 +88,10 @@ public class Jarra {
 			destino.ocupacidad += ocupacidad;
 			origen.ocupacidad = 0;
 		} else {//if (destino_libre < ocupacidad)
-			int fraccion = ocupacidad - destino_libre;
+			//int fraccion = ocupacidad - destino_libre;
+			//origen.ocupacidad -= fraccion;
+			//destino.ocupacidad += fraccion;
+			int fraccion = Math.min(ocupacidad, destino_libre);
 			origen.ocupacidad -= fraccion;
 			destino.ocupacidad += fraccion;
 		}

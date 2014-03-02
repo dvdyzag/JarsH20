@@ -1,5 +1,5 @@
 package fiusac.ia1;
-import fiusac.ia1.jarras.*;
+import fiusac.ia1.jarras.Jarra;
 public class Main{
 public static void main(String[] args){
 	Jarra jarra = new Jarra(4);

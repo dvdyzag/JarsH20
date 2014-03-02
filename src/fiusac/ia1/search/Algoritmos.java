@@ -3,7 +3,8 @@ public enum Algoritmos {
 	ANCHURA,
 	PROFUNDIDAD,
 	ANCHURA_LIMITADA,
-	PROFUNDIDAD_LIMITADA
+	PROFUNDIDAD_LIMITADA,
+	BACKJUMPING
 	;
 	@Override
     public String toString() {

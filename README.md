@@ -17,7 +17,7 @@ java fiusac.ia1.Main
 ```
 Make Jar
 ```bash
-jar cfe JarsH20.jar fiusac.ia1.Main
+jar cfe JarsH20.jar fiusac.ia1.Main *
 ```
 Or just use Ant
 ```bash
@@ -25,6 +25,6 @@ ant
 ```
 Run Jar
 ```bash
-java -jar JarsH20.jar
+java -jar JarsH20.jar c4.conf
 
 ```

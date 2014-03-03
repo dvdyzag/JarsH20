@@ -14,6 +14,7 @@ public class JarraVacioException extends JarraException {
 	 */
 	public JarraVacioException(Jarra jarra) {
 		super(jarra);
+		this.msg = "Vacio";
 		// TODO Auto-generated constructor stub
 	}
 

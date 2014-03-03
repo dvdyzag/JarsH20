@@ -9,7 +9,8 @@ package fiusac.ia1.jarras;
  */
 public class JarraException extends Exception {
 
-	private Jarra jarra;
+	public Jarra jarra;
+	public String msg;
 	/**
 	 * 
 	 */

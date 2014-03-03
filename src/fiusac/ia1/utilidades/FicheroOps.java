@@ -53,14 +53,14 @@ public class FicheroOps{
         quinto = (quintoProperty == null) ? "traslado43" : quintoProperty.trim().toLowerCase();
 
         String sextoProperty = properties.getProperty("sexto");
-        sexto = (quintoProperty == null) ? "traslado34" : sextoProperty.trim().toLowerCase();
+        sexto = (sextoProperty == null) ? "traslado34" : sextoProperty.trim().toLowerCase();
 
-        sordenReglas.add(primero);
-        sordenReglas.add(segundo);
-        sordenReglas.add(tercero);
-        sordenReglas.add(cuarto);
-        sordenReglas.add(quinto);
-        sordenReglas.add(sexto);
+        sordenReglas.add(0, primero);
+        sordenReglas.add(1 ,segundo);
+        sordenReglas.add(2, tercero);
+        sordenReglas.add(3, cuarto);
+        sordenReglas.add(4, quinto);
+        sordenReglas.add(5, sexto);
         List<Reglas> ordenReglas = NoInformado.ordenReglas;
         for (String regla: sordenReglas){
             switch (regla){
@@ -71,7 +71,7 @@ public class FicheroOps{
                     ordenReglas.add(Reglas.LLENAR3);
                     break;
                 case "vaciar4":
-                    ordenReglas.add(Reglas.LLENAR4);
+                    ordenReglas.add(Reglas.VACIAR4);
                     break;
                 case "vaciar3":
                     ordenReglas.add(Reglas.VACIAR3);

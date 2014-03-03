@@ -14,6 +14,7 @@ public class JarraLlenoException extends JarraException {
 	 */
 	public JarraLlenoException(Jarra jarra) {
 		super(jarra);
+		this.msg = "Lleno";
 		// TODO Auto-generated constructor stub
 	}
 

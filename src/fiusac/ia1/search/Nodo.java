@@ -5,12 +5,14 @@ import fiusac.ia1.jarras.Jarra;
 import fiusac.ia1.jarras.JarraException;
 public class Nodo{
 	private Jarra jarra4L, jarra3L;
+	private Nodo padre;
 	/*
 	* Este Constructor es utilizado unica y exclusivamente para el nodo inicial
 	*/
 	public Nodo(){
 		jarra4L = new Jarra(4);
 		jarra3L = new Jarra(3);
+		padre = null;
 	}
 	/*
 	* Este Constructor es utilizado para crear nodos sucesores
@@ -59,9 +61,10 @@ public class Nodo{
 						n = new Nodo(retorno.get(1), retorno.get(0)); //(4L, 3L)
 						break;
 				}
+				n.setPadre(this);
 				sucesores.add(n);
 			} catch(JarraException je){
-				System.out.println("Regla \"" + regla + "\" no aplicable para " + je.jarra + ". Estado: " + je.msg);
+				// System.out.println("Regla \"" + regla + "\" no aplicable para " + je.jarra + ". Estado: " + je.msg);
 			}
 			
 		}
@@ -69,6 +72,12 @@ public class Nodo{
 	}
 	public boolean isObjetivo(){
 		return jarra4L.getOcupacidad() == 2;
+	}
+	public Nodo getPadre(){
+		return this.padre;
+	}
+	private void setPadre(Nodo padre){
+		this.padre = padre;
 	}
 	@Override
 	public String toString(){

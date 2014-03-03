@@ -1,6 +1,9 @@
 package fiusac.ia1.search;
 import java.util.*;
 public class NoInformado{
+	private static Nodo inicial;
+	private static int nodos_visitados;
+	private static int nodos_creados;
 	public static int limite;
 	public static Algoritmos algoritmo;
 	public static final List<Reglas> ordenReglas;
@@ -27,13 +30,17 @@ public class NoInformado{
 				backjumping();
 				break;
 		}
+		System.out.println("Numero de nodos creados: " + nodos_creados);
+		System.out.println("Numero de nodos visitados: " + nodos_visitados);
 	}
 	/*
 	 * Cola FIFO
 	 * */
 	private static void anchura(){
+		nodos_visitados = 1;
+		nodos_creados = 1;
 		// Ver si nodo inicial es objetivo
-		Nodo inicial = new Nodo();
+		inicial = new Nodo();
 		if (inicial.isObjetivo()){
 			System.out.println("Solucion: " + inicial);
 			return; // salir
@@ -42,10 +49,15 @@ public class NoInformado{
 		for (;!lista.isEmpty();){ // do while improvisado
 			Nodo n = lista.remove(0); // extraer primer nodo de la lista
 			List<Nodo> sucesores = n.generarSucesores(); // generar sus sucesores en orden indicado
+			nodos_creados += sucesores.size(); // # de nodos creados
 			// System.out.println("Sucesores creados: " + sucesores.size());
+			nodos_visitados++; // # visitados
 			for (Nodo sucesor: sucesores){ // por cada sucesor
+				
 				if (sucesor.isObjetivo()){ // si sucesor es objetivo
 					// mostar solución y salir
+					System.out.println("-- -- Imprimiendo el recorrido solucion -- --");
+					imprimirRecorrido(sucesor);
 					System.out.println("Solucion: " + sucesor);
 					return;
 				}
@@ -64,6 +76,15 @@ public class NoInformado{
 	}
 	private static void backjumping(){
 		
+	}
+	private static void imprimirRecorrido(Nodo hoja){
+		Nodo padre = hoja.getPadre();
+		if (padre == null){
+			System.out.println(hoja);
+			return;
+		}
+		imprimirRecorrido(padre);
+		System.out.println(hoja);
 	}
 	/*private static boolean esObjetivo(Nodo n){
 		return n.esObjetivo();

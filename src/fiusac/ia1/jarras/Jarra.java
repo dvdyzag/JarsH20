@@ -98,7 +98,8 @@ public class Jarra {
 	*/
 	@Override
 	public String toString(){
-		return String.format("Capacidad: %d, Ocupacidad: %d, Libres: %d", capacidad, ocupacidad, getLibres());
+		// return String.format("Capacidad: %d, Ocupacidad: %d, Libres: %d", capacidad, ocupacidad, getLibres());
+		return String.format("Ocupacidad: %d", ocupacidad);
 	}
 	/*
 	* @return Instancia Jarra copia

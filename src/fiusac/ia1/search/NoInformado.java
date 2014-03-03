@@ -79,11 +79,9 @@ public class NoInformado{
 	}
 	private static void imprimirRecorrido(Nodo hoja){
 		Nodo padre = hoja.getPadre();
-		if (padre == null){
-			System.out.println(hoja);
-			return;
+		if (padre != null){
+			imprimirRecorrido(padre);
 		}
-		imprimirRecorrido(padre);
 		System.out.println(hoja);
 	}
 	/*private static boolean esObjetivo(Nodo n){

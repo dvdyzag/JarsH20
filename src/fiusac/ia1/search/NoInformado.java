@@ -1,16 +1,16 @@
 package fiusac.ia1.search;
 import java.util.*;
 public class NoInformado{
-	private static Nodo inicial;
-	private static int nodos_visitados;
-	private static int nodos_creados;
+	// private static Nodo inicial;
+	// private static List<Nodo> lista;
+	private static int nodos_visitados, nodos_novisitados, nodos_creados, nivel;
 	public static int limite;
 	public static Algoritmos algoritmo;
 	public static final List<Reglas> ordenReglas;
-	private static final List<Nodo> lista;
 	static {
 		 ordenReglas = new ArrayList<>(6);
-		 lista = new ArrayList<>();
+		 nivel = 0;
+		 // lista = new ArrayList<>();
 	}
 	public static void iniciar(){
 		switch (algoritmo){
@@ -30,17 +30,23 @@ public class NoInformado{
 				backjumping();
 				break;
 		}
+		System.out.println("-- ESTADISTICAS --");
+		System.out.println("Nivel: " + nivel);
 		System.out.println("Numero de nodos creados: " + nodos_creados);
 		System.out.println("Numero de nodos visitados: " + nodos_visitados);
+		System.out.println("Numero de nodos no visitados: " + nodos_novisitados);
+		// System.out.println("Numero de nodos no visitados: " + (nodos_creados-nodos_visitados));
 	}
 	/*
 	 * Cola FIFO
 	 * */
 	private static void anchura(){
+		List<Nodo> lista = new ArrayList<>();
 		nodos_visitados = 1;
 		nodos_creados = 1;
+		nodos_novisitados = 0;
 		// Ver si nodo inicial es objetivo
-		inicial = new Nodo();
+		Nodo inicial = new Nodo();
 		if (inicial.isObjetivo()){
 			System.out.println("Solucion: " + inicial);
 			return; // salir
@@ -58,18 +64,93 @@ public class NoInformado{
 					// mostar solución y salir
 					System.out.println("-- -- Imprimiendo el recorrido solucion -- --");
 					imprimirRecorrido(sucesor);
-					System.out.println("Solucion: " + sucesor);
+					System.out.println("-- SOLUCION: --");
+					System.out.println(sucesor);
+					nodos_novisitados = lista.size();
+					nivel = sucesor.getNivel();
 					return;
 				}
 				lista.add(sucesor);// agregar sucesor AL INICIO de la lista
 			} 
 		} // fin de do while
+		// no encontro solucion
 	}
 	private static void profundidad(){
-		
+		Stack<Nodo> lista = new Stack<>();
+		nodos_visitados = 1;
+		nodos_creados = 1;
+		// Ver si nodo inicial es objetivo
+		Nodo inicial = new Nodo();
+		if (inicial.isObjetivo()){
+			System.out.println("Solucion: " + inicial);
+			return; // salir
+		}
+		lista.push(inicial); // inicializar la lista con nodo inicial
+		for (;!lista.isEmpty();){ // do while improvisado
+			Nodo n = lista.pop(); // extraer primer nodo de la lista
+			List<Nodo> sucesores = n.generarSucesores(); // generar sus sucesores en orden indicado
+			nodos_creados += sucesores.size(); // # de nodos creados
+			// System.out.println("Sucesores creados: " + sucesores.size());
+			nodos_visitados++; // # visitados
+			for (Nodo sucesor: sucesores){ // por cada sucesor
+				
+				if (sucesor.isObjetivo()){ // si sucesor es objetivo
+					// mostar solución y salir
+					System.out.println("-- -- Imprimiendo el recorrido solucion -- --");
+					imprimirRecorrido(sucesor);
+					System.out.println("-- SOLUCION: --");
+					System.out.println(sucesor);
+					nodos_novisitados = lista.size();
+					nivel = sucesor.getNivel();
+					return;
+				}
+				lista.push(sucesor);// agregar sucesor AL FINAL de la lista
+			} 
+		} // fin de do while
 	}
 	private static void anchura_limitada(){
-		
+		List<Nodo> lista = new ArrayList<>();
+		nodos_visitados = 1;
+		nodos_creados = 1;
+		nodos_novisitados = 0;
+		// Ver si nodo inicial es objetivo
+		Nodo inicial = new Nodo();
+		if (inicial.isObjetivo()){
+			System.out.println("Solucion: " + inicial);
+			return; // salir
+		}
+		lista.add(inicial); // inicializar la lista con nodo inicial
+		for (;!lista.isEmpty();){ // do while improvisado
+			Nodo n = lista.remove(0); // extraer primer nodo de la lista
+			if (n.getNivel() < limite){
+				List<Nodo> sucesores = n.generarSucesores(); // generar sus sucesores en orden indicado
+				nodos_creados += sucesores.size(); // # de nodos creados
+				// System.out.println("Sucesores creados: " + sucesores.size());
+				nodos_visitados++; // # visitados
+				for (Nodo sucesor: sucesores){ // por cada sucesor
+					
+					if (sucesor.isObjetivo()){ // si sucesor es objetivo
+						// mostar solución y salir
+						System.out.println("-- -- Imprimiendo el recorrido solucion -- --");
+						imprimirRecorrido(sucesor);
+						System.out.println("-- SOLUCION: --");
+						System.out.println(sucesor);
+						nodos_novisitados = lista.size();
+						nivel = sucesor.getNivel();
+						return;
+					}
+					lista.add(sucesor);// agregar sucesor AL INICIO de la lista
+				}
+			} else {
+				// se supero el limite
+				System.out.println("-- -- SOLUCION NO ENCONTRADA -- --");
+				nodos_novisitados = lista.size();
+				nivel = n.getNivel();
+				System.out.println(String.format("Nivel {%d} supera el limite {%d}", nivel, limite));
+				return;
+			}
+		} // fin de do while
+		// no encontro solucion
 	}
 	private static void profundidad_limitada(){
 		
@@ -84,7 +165,4 @@ public class NoInformado{
 		}
 		System.out.println(hoja);
 	}
-	/*private static boolean esObjetivo(Nodo n){
-		return n.esObjetivo();
-	}*/
 }

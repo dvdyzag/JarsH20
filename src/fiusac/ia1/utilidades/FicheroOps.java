@@ -94,10 +94,10 @@ public class FicheroOps{
             case "anchura":
                 algoritmo = Algoritmos.ANCHURA;
                 break;
-            case "anchuraLimitada":
+            case "anchuralimitada":
                 algoritmo = Algoritmos.ANCHURA_LIMITADA;
                 break;
-            case "profundidadLimitada":
+            case "profundidadlimitada":
                 algoritmo = Algoritmos.PROFUNDIDAD_LIMITADA;
                 break;
             case "backjumping":

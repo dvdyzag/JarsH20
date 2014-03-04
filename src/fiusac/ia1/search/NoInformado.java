@@ -70,7 +70,7 @@ public class NoInformado{
 					nivel = sucesor.getNivel();
 					return;
 				}
-				lista.add(sucesor);// agregar sucesor AL INICIO de la lista
+				lista.add(sucesor);// agregar sucesor AL FINAL de la lista
 			} 
 		} // fin de do while
 		// no encontro solucion
@@ -104,7 +104,7 @@ public class NoInformado{
 					nivel = sucesor.getNivel();
 					return;
 				}
-				lista.push(sucesor);// agregar sucesor AL FINAL de la lista
+				lista.push(sucesor);// agregar sucesor AL INICIO de la lista
 			} 
 		} // fin de do while
 	}
@@ -122,11 +122,11 @@ public class NoInformado{
 		lista.add(inicial); // inicializar la lista con nodo inicial
 		for (;!lista.isEmpty();){ // do while improvisado
 			Nodo n = lista.remove(0); // extraer primer nodo de la lista
+			nodos_visitados++; // # visitados
 			if (n.getNivel() < limite){
 				List<Nodo> sucesores = n.generarSucesores(); // generar sus sucesores en orden indicado
 				nodos_creados += sucesores.size(); // # de nodos creados
 				// System.out.println("Sucesores creados: " + sucesores.size());
-				nodos_visitados++; // # visitados
 				for (Nodo sucesor: sucesores){ // por cada sucesor
 					
 					if (sucesor.isObjetivo()){ // si sucesor es objetivo
@@ -139,7 +139,7 @@ public class NoInformado{
 						nivel = sucesor.getNivel();
 						return;
 					}
-					lista.add(sucesor);// agregar sucesor AL INICIO de la lista
+					lista.add(sucesor);// agregar sucesor AL FINAL de la lista
 				}
 			} else {
 				// se supero el limite
@@ -153,7 +153,47 @@ public class NoInformado{
 		// no encontro solucion
 	}
 	private static void profundidad_limitada(){
-		
+		Stack<Nodo> lista = new Stack<>();
+		nodos_visitados = 1;
+		nodos_creados = 1;
+		nodos_novisitados = 0;
+		// Ver si nodo inicial es objetivo
+		Nodo inicial = new Nodo();
+		if (inicial.isObjetivo()){
+			System.out.println("Solucion: " + inicial);
+			return; // salir
+		}
+		lista.add(inicial); // inicializar la lista con nodo inicial
+		for (;!lista.isEmpty();){ // do while improvisado
+			Nodo n = lista.pop(); // extraer primer nodo de la lista
+			nodos_visitados++; // # visitados
+			if (n.getNivel() < limite){
+				List<Nodo> sucesores = n.generarSucesores(); // generar sus sucesores en orden indicado
+				nodos_creados += sucesores.size(); // # de nodos creados
+				// System.out.println("Sucesores creados: " + sucesores.size());
+				for (Nodo sucesor: sucesores){ // por cada sucesor
+					
+					if (sucesor.isObjetivo()){ // si sucesor es objetivo
+						// mostar solución y salir
+						System.out.println("-- -- Imprimiendo el recorrido solucion -- --");
+						imprimirRecorrido(sucesor);
+						System.out.println("-- SOLUCION: --");
+						System.out.println(sucesor);
+						nodos_novisitados = lista.size();
+						nivel = sucesor.getNivel();
+						return;
+					}
+					lista.push(sucesor);// agregar sucesor AL INICIO de la lista
+				}
+			} // 
+			nivel = n.getNivel();
+			System.out.println("topo con limite " + limite);
+		} // fin de do while
+		// no encontro solucion
+		// se supero el limite
+		System.out.println("-- -- SOLUCION NO ENCONTRADA -- --");
+		nodos_novisitados = lista.size();
+		System.out.println(String.format("Nivel {%d} supera el limite {%d}", nivel, limite));
 	}
 	private static void backjumping(){
 		

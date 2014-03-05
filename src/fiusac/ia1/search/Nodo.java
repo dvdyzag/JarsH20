@@ -21,11 +21,12 @@ public class Nodo{
 	* @param jarr4L Jarra de 4 Litros de capacidad
 	* @param jarr3L Jarra de 3 Litros de capacidad
 	*/
-	private Nodo(Nodo padre, Jarra jarra4L, Jarra jarra3L){
+	private Nodo(Nodo padre, int nivel, Jarra jarra4L, Jarra jarra3L){
 		this.padre = padre;
 		this.jarra4L = jarra4L;
 		this.jarra3L = jarra3L;
-		this.nivel = padre.nivel + 1;
+		// this.nivel = padre.nivel + 1;
+		this.nivel = nivel;
 	}
 	/*
 	 * Este Constructur es utilizado para pruebas unicamente
@@ -43,35 +44,36 @@ public class Nodo{
 	public List<Nodo> generarSucesores(){
 		List<Nodo> sucesores = new ArrayList<>(6);
 		Nodo n = null;
+		int nivel = this.nivel + 1;
 		for (Reglas regla:NoInformado.ordenReglas){
 			try{
 				//System.out.println("Testeando regla: " + regla);
 				switch(regla){
 					case LLENAR4:
 						//llenar Jarra de 4L
-						n = new Nodo(this, jarra4L.llenar(), jarra3L);//(4L, 3L)
+						n = new Nodo(this, nivel, jarra4L.llenar(), jarra3L);//(4L, 3L)
 						break;
 					case LLENAR3:
 						//llenar Jarra de 3L
-						n = new Nodo(this, jarra4L, jarra3L.llenar());//(4L, 3L)
+						n = new Nodo(this, nivel, jarra4L, jarra3L.llenar());//(4L, 3L)
 						break;
 					case VACIAR4:
 						//vaciar Jarra de 4L
-						n = new Nodo(this, jarra4L.vaciar(), jarra3L);//(4L, 3L)
+						n = new Nodo(this, nivel, jarra4L.vaciar(), jarra3L);//(4L, 3L)
 						break;
 					case VACIAR3:
 						//vacia Jarra de 3L
-						n = new Nodo(this, jarra4L, jarra3L.vaciar());//(4L, 3L)
+						n = new Nodo(this, nivel, jarra4L, jarra3L.vaciar());//(4L, 3L)
 						break;
 					case TRASLADO43:
 						//traladar Jarra de 4L a Jarra de 3L
 						List<Jarra> retorno = jarra4L.traslado(jarra3L);
-						n = new Nodo(this, retorno.get(0), retorno.get(1));//(4L, 3L)
+						n = new Nodo(this, nivel, retorno.get(0), retorno.get(1));//(4L, 3L)
 						break;
 					case TRASLADO34:
 						//traladar Jarra de 3L a Jarra de 4L
 						retorno = jarra3L.traslado(jarra4L);
-						n = new Nodo(this, retorno.get(1), retorno.get(0)); //(4L, 3L)
+						n = new Nodo(this, nivel, retorno.get(1), retorno.get(0)); //(4L, 3L)
 						break;
 				}
 				sucesores.add(n);

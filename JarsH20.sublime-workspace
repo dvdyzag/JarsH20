@@ -171,7 +171,7 @@
 			"file": "c4.conf",
 			"settings":
 			{
-				"buffer_size": 229,
+				"buffer_size": 237,
 				"line_ending": "Unix"
 			}
 		},
@@ -213,9 +213,16 @@
 	},
 	"file_history":
 	[
-		"/home/david/ecys/2012/2S12/00LAB/Proyectos/Proyecto 2/Endgame/src/fileops/FileRW.java",
-		"/home/david/Sync/IA/Practicas/Practica1/BucketsNode.java",
 		"/home/david/workspace/JarsH20/src/fiusac/ia1/search/Nodo.java",
+		"/home/david/Sync/IA/Practicas/Practica1/BucketsNode.java",
+		"/home/david/Sync/IA/Practicas/Practica1/aima/aima-core/src/main/java/aima/core/search/uninformed/BreadthFirstSearch.java",
+		"/home/david/Sync/IA/Practicas/Practica1/aima/aima-core/src/main/java/aima/core/search/uninformed/DepthFirstSearch.java",
+		"/home/david/Sync/IA/Practicas/Practica1/aima/aima-core/src/main/java/aima/core/search/uninformed/DepthLimitedSearch.java",
+		"/home/david/Sync/IA/Practicas/Practica1/SearchNode.java",
+		"/home/david/Sync/IA/Practicas/Practica1/aima/aima-core/src/main/java/aima/core/search/uninformed/BidirectionalSearch.java",
+		"/home/david/Sync/IA/Practicas/Practica1/aima/aima-core/src/main/java/aima/core/search/uninformed/UniformCostSearch.java",
+		"/home/david/Sync/IA/Practicas/Practica1/aima/aima-core/src/main/java/aima/core/search/uninformed/IterativeDeepeningSearch.java",
+		"/home/david/ecys/2012/2S12/00LAB/Proyectos/Proyecto 2/Endgame/src/fileops/FileRW.java",
 		"/home/david/workspace/JarsH20/src/fiusac/ia1/jarras/Jarra.java",
 		"/home/david/workspace/JarsH20/c2.conf",
 		"/home/david/workspace/JarsH20/src/fiusac/ia1/utilidades/FicheroOps.java",
@@ -333,14 +340,7 @@
 		"/home/david/workspace/Academy/trunk/app/config/config.yml",
 		"/home/david/sandbox/web/ruby/hello01/app/views/examples/form.html.erb",
 		"/home/david/sandbox/web/ruby/hello01/app/controllers/examples_controller.rb",
-		"/home/david/sandbox/web/ruby/hello01/app/controllers/application_controller.rb",
-		"/home/david/sandbox/web/ruby/hello01/app/controllers/hello_controller.rb",
-		"/home/david/sandbox/web/ruby/hello01/app/assets/stylesheets/hello.css.scss",
-		"/home/david/sandbox/web/ruby/hello01/app/views/hello/index.html.erb",
-		"/home/david/sandbox/web/ruby/hello01/app/views/layouts/application.html.erb",
-		"/home/david/sandbox/web/ruby/hello01/app/views/layouts/hello.html.erb",
-		"/home/david/sandbox/web/ruby/hello01/app/views/layouts/ejemplo.html.erb",
-		"/home/david/sandbox/web/ruby/hello01/config/routes.rb"
+		"/home/david/sandbox/web/ruby/hello01/app/controllers/application_controller.rb"
 	],
 	"find":
 	{
@@ -504,15 +504,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 229,
+						"buffer_size": 237,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								229,
-								229
+								237,
+								237
 							]
 						],
 						"settings":

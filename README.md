@@ -8,8 +8,10 @@ Nodo Objetivo: Jarra de 4 litros debe juntar *2 litros* de líquido
 #### Implementación de la búsqueda
 [NoInformado.java](https://github.com/dvdyzag/JarsH20/blob/master/src/fiusac/ia1/search/NoInformado.java)
 ## Autores
-David Yzaguirre Gonzalez 200819312
-Erick Roberto Dominguez Aldi 200815170
+Nombre | Carné
+------------- | -------------
+David Yzaguirre Gonzalez  | 200819312
+Erick Roberto Dominguez Aldi  | 200815170
 ## Sentencias de consola comunes
 ### Compilar
 #### utilizando javac

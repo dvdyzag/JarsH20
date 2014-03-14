@@ -144,6 +144,22 @@
 	"buffers":
 	[
 		{
+			"file": "c4.conf",
+			"settings":
+			{
+				"buffer_size": 233,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 1596,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "c1.conf",
 			"settings":
 			{
@@ -163,24 +179,8 @@
 			"file": "c3.conf",
 			"settings":
 			{
-				"buffer_size": 233,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "c4.conf",
-			"settings":
-			{
 				"buffer_size": 237,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/david/Sync/IA/Practicas/Practica1/backjumping.txt",
-			"settings":
-			{
-				"buffer_size": 407,
-				"line_ending": "Windows"
 			}
 		},
 		{
@@ -229,21 +229,23 @@
 	},
 	"file_history":
 	[
-		"/home/david/workspace/JarsH20/src/fiusac/ia1/search/Nodo.java",
-		"/home/david/Sync/IA/Practicas/Practica1/BucketsNode.java",
+		"/home/david/documents/GitHub/JBubbles/README.md",
+		"/home/david/Sync/IA/Practicas/Practica1/aima/aima-core/src/main/java/aima/core/search/uninformed/BidirectionalSearch.java",
 		"/home/david/Sync/IA/Practicas/Practica1/aima/aima-core/src/main/java/aima/core/search/uninformed/BreadthFirstSearch.java",
 		"/home/david/Sync/IA/Practicas/Practica1/aima/aima-core/src/main/java/aima/core/search/uninformed/DepthFirstSearch.java",
 		"/home/david/Sync/IA/Practicas/Practica1/aima/aima-core/src/main/java/aima/core/search/uninformed/DepthLimitedSearch.java",
-		"/home/david/Sync/IA/Practicas/Practica1/SearchNode.java",
-		"/home/david/Sync/IA/Practicas/Practica1/aima/aima-core/src/main/java/aima/core/search/uninformed/BidirectionalSearch.java",
-		"/home/david/Sync/IA/Practicas/Practica1/aima/aima-core/src/main/java/aima/core/search/uninformed/UniformCostSearch.java",
 		"/home/david/Sync/IA/Practicas/Practica1/aima/aima-core/src/main/java/aima/core/search/uninformed/IterativeDeepeningSearch.java",
+		"/home/david/Sync/IA/Practicas/Practica1/aima/aima-core/src/main/java/aima/core/search/uninformed/UniformCostSearch.java",
+		"/home/david/workspace/JarsH20/src/fiusac/ia1/search/NoInformado.java",
+		"/home/david/Sync/IA/Practicas/Practica1/backjumping.txt",
+		"/home/david/workspace/JarsH20/src/fiusac/ia1/search/Nodo.java",
+		"/home/david/Sync/IA/Practicas/Practica1/BucketsNode.java",
+		"/home/david/Sync/IA/Practicas/Practica1/SearchNode.java",
 		"/home/david/ecys/2012/2S12/00LAB/Proyectos/Proyecto 2/Endgame/src/fileops/FileRW.java",
 		"/home/david/workspace/JarsH20/src/fiusac/ia1/jarras/Jarra.java",
 		"/home/david/workspace/JarsH20/c2.conf",
 		"/home/david/workspace/JarsH20/src/fiusac/ia1/utilidades/FicheroOps.java",
 		"/home/david/workspace/JarsH20/src/fiusac/ia1/search/Reglas.java",
-		"/home/david/workspace/JarsH20/src/fiusac/ia1/search/NoInformado.java",
 		"/home/david/workspace/JarsH20/src/configuracion.conf",
 		"/VMs/tmp/9781430240563_Juneau_Source/chapter5/src/Ch_5_12_PropertiesExample.java",
 		"/home/david/workspace/JarsH20/src/fiusac/ia1/search/Algoritmos.java",
@@ -354,9 +356,7 @@
 		"/home/david/workspace/Academy/trunk/composer.lock",
 		"/home/david/workspace/Academy/trunk/deploy-user-apache.sh",
 		"/home/david/workspace/Academy/trunk/app/config/config.yml",
-		"/home/david/sandbox/web/ruby/hello01/app/views/examples/form.html.erb",
-		"/home/david/sandbox/web/ruby/hello01/app/controllers/examples_controller.rb",
-		"/home/david/sandbox/web/ruby/hello01/app/controllers/application_controller.rb"
+		"/home/david/sandbox/web/ruby/hello01/app/views/examples/form.html.erb"
 	],
 	"find":
 	{
@@ -427,11 +427,67 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "c4.conf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 233,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								233,
+								233
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1596,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								743,
+								743
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 432.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "c1.conf",
 					"semi_transient": false,
 					"settings":
@@ -443,8 +499,8 @@
 						"selection":
 						[
 							[
-								119,
-								119
+								62,
+								62
 							]
 						],
 						"settings":
@@ -459,7 +515,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 3,
 					"file": "c2.conf",
 					"semi_transient": false,
 					"settings":
@@ -483,40 +539,12 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "c3.conf",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 233,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								223,
-								223
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "c4.conf",
+					"buffer": 4,
+					"file": "c3.conf",
 					"semi_transient": false,
 					"settings":
 					{
@@ -527,8 +555,8 @@
 						"selection":
 						[
 							[
-								97,
-								97
+								237,
+								237
 							]
 						],
 						"settings":
@@ -539,36 +567,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/home/david/Sync/IA/Practicas/Practica1/backjumping.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 407,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								126,
-								126
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -584,8 +583,8 @@
 						"selection":
 						[
 							[
-								228,
-								228
+								219,
+								219
 							]
 						],
 						"settings":
@@ -596,7 +595,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -612,8 +611,8 @@
 						"selection":
 						[
 							[
-								849,
-								849
+								475,
+								475
 							]
 						],
 						"settings":
@@ -624,7 +623,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

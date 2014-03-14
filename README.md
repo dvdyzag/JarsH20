@@ -42,3 +42,12 @@ donde `c4.conf` es un fichero de texto con propiedades que el usuario ha elegido
 ```bash
 java -jar JarsH20.jar c4.conf > resultado_c4.txt
 ```
+## Imagenes
+### Fichero de entrada `c3.conf`
+![Ejemplo1.1](https://raw.github.com/dvdyzag/JarsH20/master/imagenes/Ejemplo1.1.png "Ejemplo1.1")
+### Resultado de `c3.conf`
+![Ejemplo1.2](https://raw.github.com/dvdyzag/JarsH20/master/imagenes/Ejemplo1.2.png "Ejemplo1.2")
+### Fichero de entrada `c4.conf`
+![Ejemplo2.1](https://raw.github.com/dvdyzag/JarsH20/master/imagenes/Ejemplo2.1.png "Ejemplo2.1")
+### Resultado de `c4.conf`
+![Ejemplo2.2](https://raw.github.com/dvdyzag/JarsH20/master/imagenes/Ejemplo2.2.png "Ejemplo2.2")

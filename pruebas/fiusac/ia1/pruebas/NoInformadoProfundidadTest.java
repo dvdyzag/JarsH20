@@ -11,7 +11,7 @@ public class NoInformadoProfundidadTest {
 
 	@Test
 	public void testIniciarAnchura() {
-		FicheroOps.setConfigPath("c4.conf");
+		FicheroOps.setConfigPath("c3.conf");
 		FicheroOps.iniciar();
 		NoInformado.iniciar();
 	}

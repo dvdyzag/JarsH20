@@ -3,7 +3,7 @@ import java.util.*;
 public class NoInformado{
 	// private static Nodo inicial;
 	// private static List<Nodo> lista;
-	private static int nodos_visitados, nodos_novisitados, nodos_creados, nivel;
+	private static int nodos_visitados/*, nodos_novisitados*/, nodos_creados, nivel;
 	public static int limite;
 	public static Algoritmos algoritmo;
 	public static final List<Reglas> ordenReglas;
@@ -34,9 +34,9 @@ public class NoInformado{
 		System.out.println("Nivel: " + nivel);
 		System.out.println("Numero de nodos creados: " + nodos_creados);
 		System.out.println("Numero de nodos visitados: " + nodos_visitados);
-		System.out.println("Numero de nodos no visitados: " + nodos_novisitados);
+		// System.out.println("Numero de nodos no visitados: " + nodos_novisitados);
+		System.out.println("Numero de nodos no visitados: " + (nodos_creados-nodos_visitados));
 		System.out.println("Algoritmo de busqueda no informada utilizado: " + algoritmo);
-		// System.out.println("Numero de nodos no visitados: " + (nodos_creados-nodos_visitados));
 	}
 	/*
 	 * Cola FIFO
@@ -45,7 +45,7 @@ public class NoInformado{
 		List<Nodo> lista = new ArrayList<>();
 		nodos_visitados = 1;
 		nodos_creados = 1;
-		nodos_novisitados = 0;
+		// nodos_novisitados = 0;
 		// Ver si nodo inicial es objetivo
 		Nodo inicial = new Nodo();
 		if (inicial.isObjetivo()){
@@ -55,19 +55,20 @@ public class NoInformado{
 		lista.add(inicial); // inicializar la lista con nodo inicial
 		for (;!lista.isEmpty();){ // do while improvisado
 			Nodo n = lista.remove(0); // extraer primer nodo de la lista
+			n.setVisitado();
 			List<Nodo> sucesores = n.generarSucesores(); // generar sus sucesores en orden indicado
 			nodos_creados += sucesores.size(); // # de nodos creados
 			// System.out.println("Sucesores creados: " + sucesores.size());
-			nodos_visitados++; // # visitados
+			// nodos_visitados++; // # visitados
 			for (Nodo sucesor: sucesores){ // por cada sucesor
-				
+				nodos_visitados++; // # visitados
 				if (sucesor.isObjetivo()){ // si sucesor es objetivo
 					// mostar solución y salir
 					System.out.println("-- -- Imprimiendo el recorrido solucion -- --");
 					imprimirRecorrido(sucesor);
 					System.out.println("-- SOLUCION: --");
 					System.out.println(sucesor);
-					nodos_novisitados = lista.size();
+					// nodos_novisitados = lista.size();
 					nivel = sucesor.getNivel();
 					return;
 				}
@@ -89,19 +90,20 @@ public class NoInformado{
 		lista.push(inicial); // inicializar la lista con nodo inicial
 		for (;!lista.isEmpty();){ // do while improvisado
 			Nodo n = lista.pop(); // extraer primer nodo de la lista
+			n.setVisitado();
 			List<Nodo> sucesores = n.generarSucesores(); // generar sus sucesores en orden indicado
 			nodos_creados += sucesores.size(); // # de nodos creados
 			// System.out.println("Sucesores creados: " + sucesores.size());
-			nodos_visitados++; // # visitados
+			// nodos_visitados++; // # visitados
 			for (Nodo sucesor: sucesores){ // por cada sucesor
-				
+				nodos_visitados++; // # visitados
 				if (sucesor.isObjetivo()){ // si sucesor es objetivo
 					// mostar solución y salir
 					System.out.println("-- -- Imprimiendo el recorrido solucion -- --");
 					imprimirRecorrido(sucesor);
 					System.out.println("-- SOLUCION: --");
 					System.out.println(sucesor);
-					nodos_novisitados = lista.size();
+					// nodos_novisitados = lista.size();
 					nivel = sucesor.getNivel();
 					return;
 				}
@@ -113,7 +115,7 @@ public class NoInformado{
 		List<Nodo> lista = new ArrayList<>();
 		nodos_visitados = 1;
 		nodos_creados = 1;
-		nodos_novisitados = 0;
+		// nodos_novisitados = 0;
 		// Ver si nodo inicial es objetivo
 		Nodo inicial = new Nodo();
 		if (inicial.isObjetivo()){
@@ -123,20 +125,21 @@ public class NoInformado{
 		lista.add(inicial); // inicializar la lista con nodo inicial
 		for (;!lista.isEmpty();){ // do while improvisado
 			Nodo n = lista.remove(0); // extraer primer nodo de la lista
-			nodos_visitados++; // # visitados
+			// nodos_visitados++; // # visitados
 			if (n.getNivel() < limite){
 				List<Nodo> sucesores = n.generarSucesores(); // generar sus sucesores en orden indicado
 				nodos_creados += sucesores.size(); // # de nodos creados
 				// System.out.println("Sucesores creados: " + sucesores.size());
 				for (Nodo sucesor: sucesores){ // por cada sucesor
-					
+//
+					nodos_visitados++; // # visitados
 					if (sucesor.isObjetivo()){ // si sucesor es objetivo
 						// mostar solución y salir
 						System.out.println("-- -- Imprimiendo el recorrido solucion -- --");
 						imprimirRecorrido(sucesor);
 						System.out.println("-- SOLUCION: --");
 						System.out.println(sucesor);
-						nodos_novisitados = lista.size();
+						// nodos_novisitados = lista.size();
 						nivel = sucesor.getNivel();
 						return;
 					}
@@ -145,7 +148,7 @@ public class NoInformado{
 			} else {
 				// se supero el limite
 				System.out.println("-- -- SOLUCION NO ENCONTRADA -- --");
-				nodos_novisitados = lista.size();
+				// nodos_novisitados = lista.size();
 				nivel = n.getNivel();
 				System.out.println(String.format("Nivel {%d} supera el limite {%d}", nivel, limite));
 				return;
@@ -157,7 +160,7 @@ public class NoInformado{
 		Stack<Nodo> lista = new Stack<>();
 		nodos_visitados = 1;
 		nodos_creados = 1;
-		nodos_novisitados = 0;
+		// nodos_novisitados = 0;
 		// Ver si nodo inicial es objetivo
 		Nodo inicial = new Nodo();
 		if (inicial.isObjetivo()){
@@ -167,21 +170,22 @@ public class NoInformado{
 		lista.push(inicial); // inicializar la lista con nodo inicial
 		for (;!lista.isEmpty();){ // do while improvisado
 			Nodo n = lista.pop(); // extraer primer nodo de la lista
-			nodos_visitados++; // # visitados 
+			// nodos_visitados++; // # visitados 
 			nivel = n.getNivel();
 			if (nivel < limite){
 				List<Nodo> sucesores = n.generarSucesores(); // generar sus sucesores en orden indicado
 				nodos_creados += sucesores.size(); // # de nodos creados
 				// System.out.println("Sucesores creados: " + sucesores.size());
 				for (Nodo sucesor: sucesores){ // por cada sucesor
-					
+//					
+					nodos_visitados++; // # visitados
 					if (sucesor.isObjetivo()){ // si sucesor es objetivo
 						// mostar solución y salir
 						System.out.println("-- -- Imprimiendo el recorrido solucion -- --");
 						imprimirRecorrido(sucesor);
 						System.out.println("-- SOLUCION: --");
 						System.out.println(sucesor);
-						nodos_novisitados = lista.size();
+						// nodos_novisitados = lista.size();
 						nivel = sucesor.getNivel();
 						return;
 					}
@@ -193,14 +197,14 @@ public class NoInformado{
 		// no encontro solucion
 		// se supero el limite
 		System.out.println("-- -- SOLUCION NO ENCONTRADA -- --");
-		nodos_novisitados = lista.size();
+		// nodos_novisitados = lista.size();
 		System.out.println(String.format("Nivel {%d} supera el limite {%d}", nivel, limite));
 	}
 	private static void backjumping(){
 		Stack<Nodo> lista = new Stack<>();
 		nodos_visitados = 1;
 		nodos_creados = 1;
-		nodos_novisitados = 0;
+		// nodos_novisitados = 0;
 		// Ver si nodo inicial es objetivo
 		Nodo inicial = new Nodo();
 		if (inicial.isObjetivo()){
@@ -224,7 +228,7 @@ public class NoInformado{
 						imprimirRecorrido(sucesor);
 						System.out.println("-- SOLUCION: --");
 						System.out.println(sucesor);
-						nodos_novisitados = lista.size();
+						// nodos_novisitados = lista.size();
 						nivel = sucesor.getNivel();
 						return;
 					}
@@ -247,7 +251,7 @@ public class NoInformado{
 		// no encontro solucion
 		// se supero el limite
 		System.out.println("-- -- SOLUCION NO ENCONTRADA -- --");
-		nodos_novisitados = nodos_creados - nodos_visitados;
+		// nodos_novisitados = nodos_creados - nodos_visitados;
 		System.out.println(String.format("Nivel {%d} supera el limite {%d}", nivel, limite));
 	}
 	private static void imprimirRecorrido(Nodo hoja){
